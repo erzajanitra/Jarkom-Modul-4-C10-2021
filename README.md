@@ -291,3 +291,52 @@ Setup pun selesai dan kita bisa melakukan testing ping antar node, berikut merup
 
 #### Pembagian IP
 ![CIDR-Tree](https://user-images.githubusercontent.com/75319371/143595833-412dedbd-f8e4-4710-a472-06259755b277.jpg)
+
+#### Tabel Pembagian IP
+
+|  A1 |Network ID        | 192.168.128.0   |	
+|:---:|-------------------|-----------------|	
+|     | Netmask           | 255.255.248.0   |	
+|     | Broadcast Address | 192.168.135.255 |	
+|  A2 | Network ID        | 192.168.136.0   |	
+|     | Netmask           | 255.255.255.128 |	
+|     | Broadcast Address | 192.168.136.127 |	
+|  A3 | Network ID        | 192.168.160.0   |	
+|     | Netmask           | 255.255.252.0   |	
+|     | Broadcast Address | 192.168.163.255 |	
+|  A4 | Network ID        | 192.168.64.0    |	
+|     | Netmask           | 255.255.252.0   |	
+|     | Broadcast Address | 192.168.67.255  |	
+|  A5 | Network ID        | 192.168.4.0     |	
+|     | Netmask           | 255.255.252.0   |	
+|     | Broadcast Address | 192.168.7.255   |	
+|  A6 | Network ID        | 192.168.0.0     |	
+|     | Netmask           | 255.255.254.0   |	
+|     | Broadcast Address | 192.168.1.255   |	
+|  A7 | Network ID        | 192.168.2.0     |	
+|     | Netmask           | 255.255.255.240 |	
+|     | Broadcast Address | 192.168.2.15    |	
+|  A8 | Network ID        | 192.168.8.0     |	
+|     | Netmask           | 255.255.252.0   |	
+|     | Broadcast Address | 192.168.11.255  |	
+|  A9 | Network ID        | 192.168.12.0    |	
+|     | Netmask           | 255.255.255.0   |	
+|     | Broadcast Address | 192.168.12.255  |	
+| A10 | Network ID        | 192.168.144.0   |	
+|     | Netmask           | 255.255.255.252 |	
+|     | Broadcast Address | 192.168.144.3   |	
+| A11 | Network ID        | 192.168.192.0   |	
+|     | Netmask           | 255.255.255.252 |	
+|     | Broadcast Address | 192.168.192.3   |	
+| A12 | Network ID        | 192.168.32.0    |	
+|     | Netmask           | 255.255.255.252 |	
+|     | Broadcast Address | 192.168.32.3    |	
+| A13 | Network ID        | 192.168.16.0    |	
+|     | Netmask           | 255.255.255.252 |	
+|     | Broadcast Address | 192.168.16.3    |	
+| A14 | Network ID        | 192.168.96.0    |	
+|     | Netmask           | 255.255.255.252 |	
+|     | Broadcast Address | 192.168.96.3    |	
+| A15 | Network ID        | 192.168.16.4    |	
+|     | Netmask           | 255.255.255.252 |	
+|     | Broadcast Address | 192.168.16.7    |	
