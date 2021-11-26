@@ -289,7 +289,7 @@ Setup pun selesai dan kita bisa melakukan testing ping antar node, berikut merup
 #### Langkah 6
 ![CIDR-F](https://user-images.githubusercontent.com/75319371/143595777-b696a52e-48ab-45f5-844d-1523a00076af.jpg)
 
-#### Pembagian IP
+### Pembagian IP
 ![CIDR-Tree](https://user-images.githubusercontent.com/75319371/143595833-412dedbd-f8e4-4710-a472-06259755b277.jpg)
 
 #### Tabel Pembagian IP
