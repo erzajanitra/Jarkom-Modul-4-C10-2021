@@ -243,7 +243,6 @@ Pertama-tama jangan lupa untuk menambahkan kode ini pada `Foosha`:
 
 ```
 iptables -t nat -A POSTROUTING -o eth4 -j MASQUERADE -s 10.19.0.0/19
-
 ```
 
 Selain itu jangan lupa untuk menambahkan kode ini juga pada setiap node agar dapat terhubung ke internet:
