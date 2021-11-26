@@ -270,3 +270,24 @@ Setup pun selesai dan kita bisa melakukan testing ping antar node, berikut merup
 ![dm](images/4.png)
 
 ## CIDR (CISCO)
+### Perhitungan Subnet
+#### Langkah 1
+
+![CIDR-A](https://user-images.githubusercontent.com/75319371/143595646-b5eef755-4af7-4a24-a07a-8aa0bfd2f059.jpg)
+#### Langkah 2
+![CIDR-B](https://user-images.githubusercontent.com/75319371/143595699-f888c0b1-150b-4271-8f31-11b0823c7251.jpg)
+
+#### Langkah 3
+![CIDR-C](https://user-images.githubusercontent.com/75319371/143595715-0da48ffa-6bb0-4b4e-98f8-ddf913b23b32.jpg)
+
+#### Langkah 4
+![CIDR-D](https://user-images.githubusercontent.com/75319371/143595731-08badc94-a7ad-4f60-857a-31529a7bef10.jpg)
+
+#### Langkah 5
+![CIDR-E](https://user-images.githubusercontent.com/75319371/143595745-2b234c62-ca19-445c-bc51-242714096548.jpg)
+
+#### Langkah 6
+![CIDR-F](https://user-images.githubusercontent.com/75319371/143595777-b696a52e-48ab-45f5-844d-1523a00076af.jpg)
+
+#### Pembagian IP
+![CIDR-Tree](https://user-images.githubusercontent.com/75319371/143595833-412dedbd-f8e4-4710-a472-06259755b277.jpg)
