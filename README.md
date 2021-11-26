@@ -7,7 +7,7 @@
 | Erza Janitradevi Nadine  | 05111940000153  |
 | Akmal Zaki Asmara  | 05111940000154  |
 
-## VLSM (GNS3)
+## VLSM (Variable Length Subnet Masking) - CPT
 
 ### Perhitungan Subnet
 
@@ -269,8 +269,10 @@ Setup pun selesai dan kita bisa melakukan testing ping antar node, berikut merup
 
 ![dm](images/4.png)
 
-## CIDR (CISCO)
+## CIDR (Classless Inter Domain Routing) - CISCO
 ### Perhitungan Subnet
+
+Pada subnetting menggunakan perhitungan CIDR ini, terdapat 6 langkah penggabungan subnet yang kami lakukan. Penggabungan subnet tersebut dimulai dari subnet terkecil.
 #### Langkah 1
 
 ![CIDR-A](https://user-images.githubusercontent.com/75319371/143595646-b5eef755-4af7-4a24-a07a-8aa0bfd2f059.jpg)
@@ -290,9 +292,15 @@ Setup pun selesai dan kita bisa melakukan testing ping antar node, berikut merup
 ![CIDR-F](https://user-images.githubusercontent.com/75319371/143595777-b696a52e-48ab-45f5-844d-1523a00076af.jpg)
 
 ### Pembagian IP
+
+Berdasarkan perhitungan subnet dan penggabungan subnet yang telah dilakukan, didapatkan subnet terbesar G1 dengan netmask /16. Sehingga didapatkan pembagian IP yang diilustrasikan dengan tree pada gambar berikut ini. 
+
 ![CIDR-Tree](https://user-images.githubusercontent.com/75319371/143595833-412dedbd-f8e4-4710-a472-06259755b277.jpg)
 
 #### Tabel Pembagian IP
+
+Berikut adalah tabel pembagian IP untuk subnet A1 hingga A15, yang berisi Network ID, Netmask, dan Broadcast Address.
+
 
 |  A1 |Network ID        | 192.168.128.0   |	
 |:---:|-------------------|-----------------|	
