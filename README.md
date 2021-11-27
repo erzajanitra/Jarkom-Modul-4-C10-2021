@@ -348,3 +348,105 @@ Berikut adalah tabel pembagian IP untuk subnet A1 hingga A15, yang berisi Networ
 | A15 | Network ID        | 192.168.16.4    |	
 |     | Netmask           | 255.255.255.252 |	
 |     | Broadcast Address | 192.168.16.7    |	
+
+
+### Topologi CPT
+
+Setelah melakukan penghitungan, buat topologi sesuai soal pada CPT.
+
+![TopologiCPT](images/topologicpt.png)
+
+Lalu, diperlukan setting IP dan subnet mask pada interface masing masing node. IP dan subnet mask harus sesuai hasil perhitungan dari subnetting yang telah dilakukan.
+
+Untuk router, setting IP dan subnet mask dapat dilakukan dengan double click node > Config > Interface. Sedangkan pada host bisa dilakukan dengan double click node > Desktop > IP Configuration
+
+Berikut adalah salah satu contoh konfigurasi interface pada router Foosha yang tersambung dengan router Water7 melalui interface ethernet 1 pada Foosha dan fast ethernet 0 pada Water7
+
+![Foosha](images/foosha.png)
+
+![Water7](images/water7.png)
+
+IP pada masing masing interface mengikuti penghitungan subnetting yaitu subnet A11
+
+Penyettingan IP dan subnet mask ini dilakukan pada seluruh node.
+
+### Routing
+
+Routing pada CPT dapat dilakukan dengan double click node router > Config > Routing > Static
+
+#### Default Routing
+
+Default Routing dilakukan pada setiap router selain main router yaitu Foosha. Default router dilakukan pada router yang berada pada tingkatan lebih bawah dan mengarah pada router diatasnya.
+
+Salah satu contohnya adalah pada router Water7 ke router Foosha.
+
+![Water7_default_routing](images/dr_water7.png)
+
+Untuk default routing, network dan mask akan diisi 0.0.0.0 . Sedangkan next hop diisi dengan interface dari router diatasnya yaitu router Foosha yang terkoneksi dengan router yang ingin dilakukan default routing
+
+#### Static Routing
+
+Static Routing dilakukan agar router dapat terhubung dengan client. Static Routing pada suatu client harus dilakukan pada setiap router yang dilalui oleh koneksi client ke main router dan selain router yang berada satu subnet dengan client.
+
+Salah satu contohnya adalah apabila kita ingin mengkoneksikan Foosha dengan Jipangu, maka kita perlu melakukan static routing pada router Foosha dan Water7 saja. Pucci tidak perlu static routing karena satu subnet dengan Jipangu, jadi seharusnya sudah dapat terkoneksi tanpa routing.
+
+Berikut adalah konfigurasi routing Foosha dan Water7
+
+![Foosha-Water7](images/foosha-water7.png)
+![Water7-Pucci](images/water7-pucci.png)
+
+Pada Foosha, network dan mask yang dipakai adalah NID dan subnet mask dari subnet yang akan dihubungkan yaitu subnet milik Jipangu. Sedangkan next hop merupakan interface milik router dibawahnya yang terhubung dengan router yang akan dirouting, pada kasus ini interface yang dipakai merupakan interface dari Water7 yang terhubung dengan Foosha. Hal ini juga dilakukan pada router Water7.
+
+Berikut adalah list routing pada masing masing router
+
+Foosha : 
+- 10.19.128.0/21 via 10.19.192.2
+- 10.19.136.0/25 via 10.19.192.2
+- 10.19.160.0/22 via 10.19.192.2
+- 10.19.4.0/22 via 10.19.32.2
+- 10.19.0.0/23 via 10.19.32.2
+- 10.19.2.0/28 via 10.19.32.2
+- 10.19.12.0/24 via 10.19.32.2
+- 10.19.8.0/22 via 10.19.32.2
+- 10.19.16.4/30 via 10.19.32.2
+- 10.19.144.0/30 via 10.19.192.2
+- 10.19.16.0/30 via 10.19.32.2
+
+Water7 : 
+- 0.0.0.0/0 via 10.19.192.1
+- 10.19.128.0/21 via 10.19.144.2
+- 10.19.136.0/25 via 10.19.144.2
+
+Pucci : 
+- 0.0.0.0/0 via 10.19.144.1
+
+Guanhao : 
+- 0.0.0.0/0 via 10.19.32.1
+- 10.19.2.0/28 via 10.19.0.3
+- 10.19.12.0/24 via 10.19.16.2
+- 10.19.8.0/22 via 10.19.16.2
+- 10.19.16.4/30 via 10.19.16.2
+
+Alabasta : 
+- 0.0.0.0/0 via 10.19.0.1
+
+Oimo : 
+- 0.0.0.0/0 via 10.19.16.1
+- 10.19.8.0/22 via 10.19.12.3
+
+Seastone : 
+- 0.0.0.0/0 via 10.19.12.1
+
+
+### Testing
+
+Testing pada CPT dapat dilakukan dengan tombol Add Simple PDU yang dilambangkan dengan icon pesan pada top navigation.
+
+1. Jipangu - Doriki
+   ![jipangu-doriki](images/jipangu-doriki.png)
+2. Pucci - Oimo
+   ![pucci-oimo](images/pucci-oimo.png)
+3. Jipangu - Fukurou
+   ![jipangu-fukurou](images/jipangu-fukurou.png)
+4. Courtyard - Enieslobby
+   ![courtyard-enieslobby](images/courtyard-enieslobby.png)
