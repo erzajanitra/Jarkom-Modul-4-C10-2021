@@ -7,7 +7,7 @@
 | Erza Janitradevi Nadine  | 05111940000153  |
 | Akmal Zaki Asmara  | 05111940000154  |
 
-## VLSM (Variable Length Subnet Masking) - CPT
+## VLSM (Variable Length Subnet Masking) - GNS3
 
 ### Perhitungan Subnet
 
