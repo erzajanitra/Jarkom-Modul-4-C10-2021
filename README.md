@@ -442,11 +442,11 @@ Seastone :
 
 Testing pada CPT dapat dilakukan dengan tombol Add Simple PDU yang dilambangkan dengan icon pesan pada top navigation.
 
-1. Jipangu - Doriki
+1. Jipangu - Doriki   
    ![jipangu-doriki](images/jipangu-doriki.png)
-2. Pucci - Oimo
+2. Pucci - Oimo    
    ![pucci-oimo](images/pucci-oimo.png)
-3. Jipangu - Fukurou
+3. Jipangu - Fukurou    
    ![jipangu-fukurou](images/jipangu-fukurou.png)
-4. Courtyard - Enieslobby
+4. Courtyard - Enieslobby    
    ![courtyard-enieslobby](images/courtyard-enieslobby.png)
